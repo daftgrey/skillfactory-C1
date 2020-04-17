@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="clock.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap&subset=cyrillic" rel="stylesheet">
+  <script src="clock.js"></script>
+</head>
+<body>
+  <h1 class="countdown-title">Countdown Clock</h1>
+  <section class="countdown">
+    <div class="countdown-number">
+      <p class="minutes countdown-time"></p>
+      <p class="countdown-text">Minutes</p>
+    </div>
+    <div class="countdown-number">
+      <p class="seconds countdown-time"></p>
+      <p class="countdown-text">Seconds</p>
+    </div>
+  </section>
+      <section class="controller">
+      <div>
+        <label for="minutes">Minutes: </label>
+        <input type="number" class="input_minutes" value="00" min="00" max="59" name="minutes">
+        <label for="seconds">Seconds: </label>
+        <input type="number" class="input_seconds" value="00" min="00" max="59" name="seconds">
+        <button class="manuallyImput">set</button>
+      </div>
+    </section> 
+  <div class ="groupButton">
+    <button class="plus">plus</button>
+    <button class="minus">minus</button>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+  </div>
+
+  <div class="message">  
+  </div> 
+  <button class="reloadTimer">Reload</button>
+</body>
+</html>
